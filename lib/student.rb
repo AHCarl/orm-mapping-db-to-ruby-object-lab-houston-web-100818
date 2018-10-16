@@ -63,6 +63,7 @@ class Student
     sql = "SELECT * FROM students WHERE grade < 12"
     
     stud = DB[:conn].execute(sql)
+    stud**
   end
   
 end
