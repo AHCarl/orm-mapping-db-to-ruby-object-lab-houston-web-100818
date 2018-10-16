@@ -62,7 +62,8 @@ class Student
   def self.students_below_12th_grade
     sql = "SELECT * FROM students WHERE grade < 12"
     
-    DB[:conn].execute(sql)
+    stud = DB[:conn].execute(sql)
+    self.new_from_db(*stud)
   end
   
 end
