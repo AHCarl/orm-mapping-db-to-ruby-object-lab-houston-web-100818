@@ -63,8 +63,6 @@ class Student
     sql = "SELECT * FROM students WHERE grade < 12"
     
     stud = DB[:conn].execute(sql)
-    self.new_from_db(*stud)
-    stud
   end
   
 end
